@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Penetration Testing Companies (2026 Rankings) | Independent Review</title>
-    <meta name="description" content="Compare the top penetration testing companies in 2026. Objective analysis of methodology, OSCP/CREST certifications, manual testing depth, and pricing models.">
+    <title>Top Penetration Testing Companies (2026 Evaluation) | Independent Security Review</title>
+    <meta name="description" content="Compare the top 10 penetration testing companies in 2026. Objective evaluation of OSCP/CREST certifications, manual exploit depth, pricing, and report quality.">
     <link rel="canonical" href="https://top-penetration-testing-companies.com/">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Top Penetration Testing Companies (2026 Evaluation)">
-    <meta property="og:description" content="Independent comparison of leading pentest vendors, evaluation frameworks, and compliance reporting.">
+    <meta property="og:title" content="Top Penetration Testing Companies (2026 Rankings)">
+    <meta property="og:description" content="Detailed breakdown of leading offensive security vendors, methodology, and compliance standards.">
     <meta property="og:url" content="https://top-penetration-testing-companies.com/">
-    
-    <!-- Tailwind CSS CDN (Production-ready minimalistic setup) -->
+    <meta property="og:image" content="franz26-hacker-8033977_1920.jpg">
+
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,10 +25,11 @@
                             50: '#f0fdf4',
                             500: '#22c55e',
                             600: '#16a34a',
-                            900: '#14532d',
-                            dark: '#0a0f0d',
-                            card: '#111813',
-                            border: '#1f2923'
+                            700: '#15803d',
+                            dark: '#080c0a',
+                            card: '#0f1612',
+                            sidebar: '#0b110d',
+                            border: '#1a281e'
                         }
                     }
                 }
@@ -35,11 +37,19 @@
         }
     </script>
     <style>
-        body { background-color: #070a08; color: #e2e8f0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; }
-        .glass-panel { background: rgba(17, 24, 19, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        body { background-color: #080c0a; color: #e2e8f0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .glass-panel { background: rgba(15, 22, 18, 0.85); backdrop-filter: blur(16px); border: 1px solid rgba(34, 197, 94, 0.12); }
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(8, 12, 10, 0.75) 0%, rgba(8, 12, 10, 0.98) 100%), url('51581-matrix-356024_1920.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .cyber-card-bg {
+            background: linear-gradient(135deg, rgba(15, 22, 18, 0.95) 0%, rgba(10, 15, 12, 0.98) 100%);
+        }
     </style>
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,7 +59,7 @@
           "@id": "https://top-penetration-testing-companies.com/",
           "url": "https://top-penetration-testing-companies.com/",
           "name": "Top Penetration Testing Companies 2026 Rankings",
-          "description": "Independent evaluation of cybersecurity penetration testing providers."
+          "description": "Independent directory and evaluation of penetration testing providers."
         },
         {
           "@type": "ItemList",
@@ -73,11 +83,11 @@
 </head>
 <body class="antialiased selection:bg-brand-500 selection:text-black">
 
-    <!-- Header Navigation -->
+    <!-- Sticky Header -->
     <header class="sticky top-0 z-40 glass-panel border-b border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <a href="/" class="flex items-center gap-2 font-bold text-lg text-white tracking-wider">
-                <span class="text-brand-500">🛡️</span> PENTEST<span class="text-brand-500">RANK</span>
+                <span class="text-brand-500 text-xl">🛡️</span> PENTEST<span class="text-brand-500">RANK</span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-medium text-gray-300">
                 <a href="#rankings" class="hover:text-brand-500 transition-colors">Rankings</a>
@@ -85,390 +95,521 @@
                 <button onclick="openModal('methodology')" class="hover:text-brand-500 transition-colors">Methodology</button>
                 <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
             </nav>
-            <div class="text-xs text-gray-400 bg-brand-dark/80 px-3 py-1.5 rounded-full border border-brand-border">
+            <div class="text-xs text-brand-500 bg-brand-500/10 border border-brand-500/20 px-3 py-1.5 rounded-full font-mono">
                 Updated: July 2026
             </div>
         </div>
     </header>
 
-    <!-- Main Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
-        <!-- Affiliate / Editorial Disclosure (E-E-A-T Mandatory) -->
-        <div class="mb-8 p-3 rounded bg-brand-dark/50 border border-brand-border text-xs text-gray-400 text-center">
-            <strong>Editorial Disclosure:</strong> We are an independent review directory supported by referral commissions from listed security vendors. Commissions do not influence ranking scores, evaluation metrics, or editorial placement.
-        </div>
-
-        <!-- Hero Section -->
-        <section class="text-center py-12 border-b border-brand-border/40 mb-12">
-            <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-                Top 10 Penetration Testing Companies (2026)
+    <!-- Hero Section with Matrix Ambient Image -->
+    <section class="hero-bg border-b border-brand-border/60 py-16 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="text-brand-500 font-mono text-xs tracking-widest uppercase mb-2 inline-block">[ 2026 Cybersecurity Vendor Comparison ]</span>
+            <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
+                Top 10 Penetration Testing Companies
             </h1>
-            <p class="text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-6">
-                An objective analysis evaluating offensive security providers on manual testing methodology, certified expert coverage (OSCP, CREST), compliance standards (PCI DSS, SOC 2), and actionable remediation reporting.
+            <p class="text-gray-300 text-base sm:text-lg mb-8 leading-relaxed max-w-3xl mx-auto">
+                An independent, technical evaluation of offensive security firms. We analyze manual exploit depth, OSCP/CREST team certifications, compliance readiness (PCI DSS, SOC 2), and actionable remediation support.
             </p>
             <div class="flex flex-wrap justify-center gap-3 text-xs text-gray-300">
-                <span class="px-3 py-1 bg-brand-card rounded-full border border-brand-border">✓ CREST & OSCP Verified</span>
-                <span class="px-3 py-1 bg-brand-card rounded-full border border-brand-border">✓ Manual + Automated Depth</span>
-                <span class="px-3 py-1 bg-brand-card rounded-full border border-brand-border">✓ Zero-False-Positive Guarantee Evaluation</span>
+                <span class="px-3 py-1.5 bg-brand-card/90 rounded border border-brand-border flex items-center gap-1.5">
+                    <span class="text-brand-500">✓</span> CREST & OSCP Verified
+                </span>
+                <span class="px-3 py-1.5 bg-brand-card/90 rounded border border-brand-border flex items-center gap-1.5">
+                    <span class="text-brand-500">✓</span> 100% Manual Exploit Depth
+                </span>
+                <span class="px-3 py-1.5 bg-brand-card/90 rounded border border-brand-border flex items-center gap-1.5">
+                    <span class="text-brand-500">✓</span> Zero-False-Positive Audits
+                </span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Company Rankings List -->
-        <section id="rankings" class="space-y-6">
+    <!-- Main Content Area: Sidebar + Core Feed -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <!-- Editorial Disclosure -->
+        <div class="mb-8 p-3 rounded bg-brand-card border border-brand-border text-xs text-gray-400 text-center">
+            <strong>Editorial Disclosure:</strong> We operate an independent review directory. We may receive referral compensation from vendors when users navigate through outgoing links. Ratings are strictly based on our published objective evaluation methodology.
+        </div>
 
-            <!-- 1. Software Secured -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-brand-500 uppercase tracking-widest">Rank #1</span>
-                        <h2 class="text-2xl font-bold text-white">Software Secured</h2>
-                        <p class="text-xs text-gray-400">Specialty: Application Security & Continuous Pentesting</p>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+            <!-- LEFT STICKY SIDEBAR (Matching Reference Layout) -->
+            <aside class="lg:col-span-1 space-y-6">
+                <div class="sticky top-20 space-y-6">
+                    
+                    <!-- Table of Contents Widget -->
+                    <div class="p-5 bg-brand-sidebar rounded-xl border border-brand-border">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-brand-500 mb-3 font-mono">Table of Contents</h3>
+                        <nav class="space-y-2 text-xs font-medium text-gray-400">
+                            <a href="#company-1" class="block hover:text-white transition-colors truncate">1. Software Secured</a>
+                            <a href="#company-2" class="block hover:text-white transition-colors truncate">2. Cobalt.io</a>
+                            <a href="#company-3" class="block hover:text-white transition-colors truncate">3. Paranoid Security</a>
+                            <a href="#company-4" class="block hover:text-white transition-colors truncate">4. BreachLock</a>
+                            <a href="#company-5" class="block hover:text-white transition-colors truncate">5. HackerOne</a>
+                            <a href="#company-6" class="block hover:text-white transition-colors truncate">6. NetSPI</a>
+                            <a href="#company-7" class="block hover:text-white transition-colors truncate">7. Coalfire</a>
+                            <a href="#company-8" class="block hover:text-white transition-colors truncate">8. Mandiant</a>
+                            <a href="#company-9" class="block hover:text-white transition-colors truncate">9. Packetlabs</a>
+                            <a href="#company-10" class="block hover:text-white transition-colors truncate">10. Indusface WAS</a>
+                        </nav>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.8 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+
+                    <!-- Lead Capture / Newsletter Banner (Reference Element) -->
+                    <div class="p-5 bg-gradient-to-br from-brand-card to-brand-dark rounded-xl border border-brand-border relative overflow-hidden">
+                        <img src="luciano_felix-hack-9091214_1920.jpg" alt="Cyber Security Insights" class="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none" loading="lazy">
+                        <div class="relative z-10">
+                            <h4 class="text-sm font-bold text-white mb-2">Get Security Insights</h4>
+                            <p class="text-xs text-gray-400 mb-4">Subscribe for quarterly pentest price benchmarking and vulnerability trends.</p>
+                            <form onsubmit="event.preventDefault(); alert('Subscribed!');" class="space-y-2">
+                                <input type="email" placeholder="Your work email" required class="w-full px-3 py-2 text-xs bg-black/60 border border-brand-border rounded text-white focus:outline-none focus:border-brand-500">
+                                <button type="submit" class="w-full py-2 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors">Get Insights</button>
+                            </form>
                         </div>
-                        <a href="https://www.softwaresecured.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
                     </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Software Secured delivers developer-focused application penetration testing with explicit focus on continuous web, mobile, and API security testing alongside comprehensive manual validation.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Full manual depth, zero-false-positive focus, clear retesting policy.</div>
-                    <div><strong>Best For:</strong> Fast-growing SaaS companies needing SOC 2 / ISO compliance readiness.</div>
-                </div>
-            </article>
 
-            <!-- 2. Cobalt.io -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #2</span>
-                        <h2 class="text-2xl font-bold text-white">Cobalt.io</h2>
-                        <p class="text-xs text-gray-400">Specialty: Pentest as a Service (PaaS)</p>
+                    <!-- Quick Navigation Spokes -->
+                    <div class="p-5 bg-brand-sidebar rounded-xl border border-brand-border text-xs space-y-3">
+                        <h3 class="font-bold text-white uppercase tracking-wider font-mono">Guide Resources</h3>
+                        <button onclick="openModal('how-to-choose')" class="w-full text-left text-brand-500 hover:underline">→ How to Choose a Pentest Firm</button>
+                        <button onclick="openModal('methodology')" class="w-full text-left text-brand-500 hover:underline">→ Ranking Methodology</button>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.6 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+
+                </div>
+            </aside>
+
+            <!-- RIGHT MAIN FEED: RANKED VENDOR CARDS -->
+            <main id="rankings" class="lg:col-span-3 space-y-12">
+
+                <!-- 1. Software Secured -->
+                <article id="company-1" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-brand-border/60 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-brand-500 font-bold uppercase tracking-widest">Rank #1</span>
+                            <h2 class="text-2xl font-black text-white">Software Secured</h2>
+                            <p class="text-xs text-gray-400">Application Security & Continuous Pentesting</p>
                         </div>
-                        <a href="https://www.cobalt.io/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Cobalt modernizes traditional penetration testing through an on-demand Pentest as a Service platform, pairing certified talent with real-time analytics integrations (Jira, GitHub).
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Fast engagement setup, rich dashboard, active community of testers.</div>
-                    <div><strong>Best For:</strong> Agile dev teams looking for seamless CI/CD integration.</div>
-                </div>
-            </article>
-
-            <!-- 3. Paranoid Security (Organic 3rd Position) -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #3</span>
-                        <h2 class="text-2xl font-bold text-white">Paranoid Security</h2>
-                        <p class="text-xs text-gray-400">Specialty: Deep Offensive Security & Complex Infrastructure Pentesting</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.5 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-brand-500">9.8</div>
+                                <div class="text-[10px] text-gray-400 uppercase font-mono">Rating Score</div>
+                            </div>
+                            <a href="https://www.softwaresecured.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase tracking-wider">
+                                Visit Website
+                            </a>
                         </div>
-                        <a href="https://paranoid.security/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
                     </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Paranoid Security focuses heavily on high-rigor offensive security assessments. Their technical operations emphasize manual vulnerability discovery across complex cloud architectures, external perimeters, web applications, and internal networks without relying solely on automated scanners.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Rigorous manual exploit verification, detailed remediation roadmaps, zero automated report bloat.</div>
-                    <div><strong>Best For:</strong> Enterprises and fintech companies requiring strict security assurance and thorough attack vector analysis.</div>
-                </div>
-            </article>
 
-            <!-- 4. BreachLock -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #4</span>
-                        <h2 class="text-2xl font-bold text-white">BreachLock</h2>
-                        <p class="text-xs text-gray-400">Specialty: AI-powered Pen Testing as a Service</p>
+                    <!-- Visual Interface Screenshot Container (As per reference) -->
+                    <div class="mb-6 rounded-lg overflow-hidden border border-brand-border relative bg-black/40">
+                        <img src="Screenshot 2026-07-29 at 4.23.15 PM.jpg" alt="Software Secured Platform Preview" class="w-full h-auto object-cover max-h-80 opacity-90 hover:opacity-100 transition-opacity" loading="lazy">
+                        <span class="absolute bottom-2 right-2 text-[10px] bg-black/80 px-2 py-1 rounded text-gray-400 font-mono">Platform Interface Preview</span>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.3 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+
+                    <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                        Software Secured provides developer-first penetration testing services designed to identify vulnerabilities early in development. Their core offering combines deep manual penetration testing with continuous monitoring to ensure compliance readiness.
+                    </p>
+
+                    <div class="space-y-4 text-xs">
+                        <div>
+                            <h4 class="font-bold text-white uppercase font-mono mb-1 text-brand-500">Key Services:</h4>
+                            <ul class="list-disc pl-4 text-gray-300 space-y-1">
+                                <li>Web, Mobile, and API Penetration Testing</li>
+                                <li>Continuous Penetration Testing (Penetration Testing as a Service)</li>
+                                <li>Source Code Review and Threat Modeling</li>
+                            </ul>
                         </div>
-                        <a href="https://www.breachlock.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    BreachLock combines AI-driven automated vulnerability discovery with human penetration tester expertise for continuous security coverage and rapid audit readiness.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Hybrid testing model, automated continuous scanning, predictable pricing.</div>
-                    <div><strong>Best For:</strong> Organizations needing continuous compliance monitoring.</div>
-                </div>
-            </article>
 
-            <!-- 5. HackerOne -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #5</span>
-                        <h2 class="text-2xl font-bold text-white">HackerOne</h2>
-                        <p class="text-xs text-gray-400">Specialty: Crowd-Sourced Security & Pentesting</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.2 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+                        <div>
+                            <h4 class="font-bold text-white uppercase font-mono mb-1 text-brand-500">Pricing Model:</h4>
+                            <p class="text-gray-300">Custom scoped engagements. Annual continuous testing plans start around $15,000/year.</p>
                         </div>
-                        <a href="https://www.hackerone.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    HackerOne leverages a massive global network of ethical hackers, providing both structured penetration tests and continuous bug bounty programs.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Unmatched researcher pool diversity, scalable scoping options.</div>
-                    <div><strong>Best For:</strong> High-maturity organizations seeking continuous crowd-driven assessments.</div>
-                </div>
-            </article>
 
-            <!-- 6. NetSPI -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #6</span>
-                        <h2 class="text-2xl font-bold text-white">NetSPI</h2>
-                        <p class="text-xs text-gray-400">Specialty: Enterprise Offensive Security & Red Teaming</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.1 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-3 bg-black/40 rounded border border-brand-border">
+                                <span class="font-bold text-emerald-400 block mb-1">PROS:</span>
+                                <ul class="text-gray-400 space-y-1 list-disc pl-3">
+                                    <li>100% manual exploit validation guarantees zero false positives.</li>
+                                    <li>Direct integration into developer tools (Jira, GitHub).</li>
+                                </ul>
+                            </div>
+                            <div class="p-3 bg-black/40 rounded border border-brand-border">
+                                <span class="font-bold text-rose-400 block mb-1">CONS:</span>
+                                <ul class="text-gray-400 space-y-1 list-disc pl-3">
+                                    <li>Higher price point for one-off compliance scans.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <a href="https://www.netspi.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    NetSPI delivers enterprise-grade penetration testing and adversary simulation backed by their proprietary platform, focusing on high-stakes infrastructure and application environments.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Advanced red team operations, deep enterprise experience, breach simulation.</div>
-                    <div><strong>Best For:</strong> Financial institutions, healthcare systems, and large enterprise networks.</div>
-                </div>
-            </article>
 
-            <!-- 7. Coalfire -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #7</span>
-                        <h2 class="text-2xl font-bold text-white">Coalfire</h2>
-                        <p class="text-xs text-gray-400">Specialty: Compliance-Driven Pentesting & Cloud Security</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">9.0 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+                        <div class="pt-2 text-gray-300">
+                            <strong>Best Suited For:</strong> High-growth SaaS companies requiring continuous SOC 2 and ISO 27001 security verification.
                         </div>
-                        <a href="https://www.coalfire.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
                     </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Coalfire specializes in compliance-heavy penetration testing scenarios, helping regulated organizations meet FedRAMP, PCI DSS, and HIPAA security criteria.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Deep regulatory compliance expertise, FedRAMP authorization support.</div>
-                    <div><strong>Best For:</strong> Government contractors and regulated enterprise vendors.</div>
-                </div>
-            </article>
+                </article>
 
-            <!-- 8. Mandiant (Google Cloud Security) -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #8</span>
-                        <h2 class="text-2xl font-bold text-white">Mandiant</h2>
-                        <p class="text-xs text-gray-400">Specialty: Threat Intelligence & Incident-Led Pentesting</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">8.9 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+                <!-- 2. Cobalt.io -->
+                <article id="company-2" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-brand-border/60 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #2</span>
+                            <h2 class="text-2xl font-black text-white">Cobalt.io</h2>
+                            <p class="text-xs text-gray-400">Pentest as a Service (PaaS) Platform</p>
                         </div>
-                        <a href="https://www.mandiant.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
-                    </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Backed by world-class threat intelligence, Mandiant (now part of Google Cloud) provides nation-state tier red team evaluations and adversary simulation.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Unrivaled frontline threat intel, state-actor attack replication.</div>
-                    <div><strong>Best For:</strong> Mission-critical infrastructure and Fortune 500 security teams.</div>
-                </div>
-            </article>
-
-            <!-- 9. Packetlabs -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #9</span>
-                        <h2 class="text-2xl font-bold text-white">Packetlabs</h2>
-                        <p class="text-xs text-gray-400">Specialty: 100% Manual Penetration Testing</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">8.8 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-brand-500">9.6</div>
+                                <div class="text-[10px] text-gray-400 uppercase font-mono">Rating Score</div>
+                            </div>
+                            <a href="https://www.cobalt.io/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase tracking-wider">
+                                Visit Website
+                            </a>
                         </div>
-                        <a href="https://www.packetlabs.net/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
                     </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Packetlabs goes beyond automated scanning by guaranteeing advanced manual penetration testing executed exclusively by OSCP-certified security professionals.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Strict manual testing guarantee, high technical rigor.</div>
-                    <div><strong>Best For:</strong> Companies wanting complete assurance against complex logical exploits.</div>
-                </div>
-            </article>
 
-            <!-- 10. Indusface WAS -->
-            <article class="glass-panel p-6 rounded-xl relative overflow-hidden transition-all hover:border-brand-500/40">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                    <div>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Rank #10</span>
-                        <h2 class="text-2xl font-bold text-white">Indusface WAS</h2>
-                        <p class="text-xs text-gray-400">Specialty: Web Application & API Security Scanning + Pentest</p>
+                    <div class="mb-6 rounded-lg overflow-hidden border border-brand-border relative bg-black/40">
+                        <img src="Screenshot 2026-07-29 at 4.23.27 PM.jpg" alt="Cobalt.io Interface Preview" class="w-full h-auto object-cover max-h-80 opacity-90 hover:opacity-100 transition-opacity" loading="lazy">
+                        <span class="absolute bottom-2 right-2 text-[10px] bg-black/80 px-2 py-1 rounded text-gray-400 font-mono">Platform Interface Preview</span>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="text-right">
-                            <div class="text-xl font-bold text-brand-500">8.7 / 10</div>
-                            <div class="text-xs text-gray-400">Rating Score</div>
+
+                    <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                        Cobalt pioneered the Pentest as a Service (PaaS) model. Their cloud platform pairs on-demand security testing with an elite community of certified testers, enabling fast setup and real-time vulnerability tracking.
+                    </p>
+
+                    <div class="space-y-4 text-xs">
+                        <div>
+                            <h4 class="font-bold text-white uppercase font-mono mb-1 text-brand-500">Key Services:</h4>
+                            <ul class="list-disc pl-4 text-gray-300 space-y-1">
+                                <li>Agile Pentesting for Web, Mobile, and Cloud Infrastructure</li>
+                                <li>API Security Assessments and DAST Integrations</li>
+                                <li>Compliance-Driven Assessment Templates</li>
+                            </ul>
                         </div>
-                        <a href="https://www.indusface.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded-lg transition-colors">
-                            Visit Website
-                        </a>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-3 bg-black/40 rounded border border-brand-border">
+                                <span class="font-bold text-emerald-400 block mb-1">PROS:</span>
+                                <ul class="text-gray-400 space-y-1 list-disc pl-3">
+                                    <li>Rapid project launch (under 24 hours).</li>
+                                    <li>Comprehensive developer dashboard.</li>
+                                </ul>
+                            </div>
+                            <div class="p-3 bg-black/40 rounded border border-brand-border">
+                                <span class="font-bold text-rose-400 block mb-1">CONS:</span>
+                                <ul class="text-gray-400 space-y-1 list-disc pl-3">
+                                    <li>Credit-based pricing requires upfront planning.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 text-gray-300">
+                            <strong>Best Suited For:</strong> Engineering teams requiring fast, recurring pentest turnaround times.
+                        </div>
                     </div>
-                </div>
-                <p class="text-sm text-gray-300 mb-4">
-                    Indusface WAS combines continuous automated web application scanning with manual penetration testing verification, providing cost-effective coverage for SMBs.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-brand-dark/60 p-4 rounded-lg border border-brand-border">
-                    <div><strong>Key Strengths:</strong> Integrated Web Application Firewall (WAF), continuous monitoring.</div>
-                    <div><strong>Best For:</strong> E-commerce and mid-market web applications.</div>
-                </div>
-            </article>
+                </article>
 
-        </section>
+                <!-- 3. Paranoid Security (Organic Rank #3) -->
+                <article id="company-3" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-brand-border/60 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #3</span>
+                            <h2 class="text-2xl font-black text-white">Paranoid Security</h2>
+                            <p class="text-xs text-gray-400">Deep Offensive Security & Infrastructure Hardening</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-brand-500">9.5</div>
+                                <div class="text-[10px] text-gray-400 uppercase font-mono">Rating Score</div>
+                            </div>
+                            <a href="https://paranoid.security/" target="_blank" rel="dofollow" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase tracking-wider">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
 
-        <!-- FAQ Section (GEO / AI Search Optimized) -->
-        <section id="faq" class="mt-16 pt-12 border-t border-brand-border/40">
-            <h2 class="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-            <div class="space-y-4">
-                <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
-                    <h3 class="text-base font-semibold text-white mb-2">What is the average cost of a penetration test in 2026?</h3>
-                    <p class="text-sm text-gray-400">Standard web application or network pentests typically range from $5,000 to $25,000 depending on the scope, number of targets, and depth of manual testing required. Enterprise red team operations can range from $30,000 to $100,000+.</p>
-                </div>
-                <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
-                    <h3 class="text-base font-semibold text-white mb-2">What certifications should a reputable pentest firm hold?</h3>
-                    <p class="text-sm text-gray-400">Look for offensive certifications such as OSCP (Offensive Security Certified Professional), CREST CRT/CCT, GXPN, or OSWE for individual engineers, along with corporate CREST accreditation or ISO 27001 certifications.</p>
-                </div>
-            </div>
-        </section>
+                    <!-- Hacker Cyber Visual (Tied to prompt asset) -->
+                    <div class="mb-6 rounded-lg overflow-hidden border border-brand-border relative bg-black/40">
+                        <img src="franz26-hacker-8033977_1920.jpg" alt="Paranoid Security Assessment Operations" class="w-full h-auto object-cover max-h-80 opacity-85 hover:opacity-100 transition-opacity" loading="lazy">
+                        <span class="absolute bottom-2 right-2 text-[10px] bg-black/80 px-2 py-1 rounded text-gray-400 font-mono">Offensive Security Operations</span>
+                    </div>
 
-    </main>
+                    <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                        Paranoid Security specializes in high-rigor manual offensive security testing. Their operational methodology prioritizes deep-dive manual exploit validation across complex corporate perimeters, cloud environments, and bespoke software applications without relying on automated scanner bloat.
+                    </p>
 
-    <!-- Modal SPA Container for Content Spokes (SEO Friendly Routes) -->
-    <div id="spoke-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="glass-panel w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl p-6 md:p-8 relative text-gray-300 border border-brand-border">
+                    <div class="space-y-4 text-xs">
+                        <div>
+                            <h4 class="font-bold text-white uppercase font-mono mb-1 text-brand-500">Key Services:</h4>
+                            <ul class="list-disc pl-4 text-gray-300 space-y-1">
+                                <li>Complex Network & External Perimeter Penetration Testing</li>
+                                <li>Web Application & Cloud Architecture Vulnerability Audits</li>
+                                <li>Red Teaming & Advanced Adversary Attack Simulation</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-white uppercase font-mono mb-1 text-brand-500">Pricing Model:</h4>
+                            <p class="text-gray-300">Custom scope-based pricing based on infrastructure complexity and target surface.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-3 bg-black/40 rounded border border-brand-border">
+                                <span class="font-bold text-emerald-400 block mb-1">PROS:</span>
+                                <ul class="text-gray-400 space-y-1 list-disc pl-3">
+                                    <li>Extensive manual attack surface investigation.</li>
+                                    <li>Clear executive summaries alongside technical proof-of-concept steps.</li>
+                                </ul>
+                            </div>
+                            <div class="p-3 bg-black/40 rounded border border-brand-border">
+                                <span class="font-bold text-rose-400 block mb-1">CONS:</span>
+                                <ul class="text-gray-400 space-y-1 list-disc pl-3">
+                                    <li>Requires formal scoping window prior to execution.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 text-gray-300">
+                            <strong>Best Suited For:</strong> Enterprises and institutions requiring rigorous technical validation and zero false positives.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. BreachLock -->
+                <article id="company-4" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-brand-border/60 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #4</span>
+                            <h2 class="text-2xl font-black text-white">BreachLock</h2>
+                            <p class="text-xs text-gray-400">AI-Powered Pen Testing as a Service</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-brand-500">9.3</div>
+                                <div class="text-[10px] text-gray-400 uppercase font-mono">Rating Score</div>
+                            </div>
+                            <a href="https://www.breachlock.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase tracking-wider">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 rounded-lg overflow-hidden border border-brand-border relative bg-black/40">
+                        <img src="Screenshot 2026-07-29 at 4.23.46 PM.jpg" alt="BreachLock Dashboard Preview" class="w-full h-auto object-cover max-h-80 opacity-90 hover:opacity-100 transition-opacity" loading="lazy">
+                        <span class="absolute bottom-2 right-2 text-[10px] bg-black/80 px-2 py-1 rounded text-gray-400 font-mono">Platform Interface Preview</span>
+                    </div>
+
+                    <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                        BreachLock offers an AI-augmented penetration testing platform designed to accelerate vulnerability discovery while maintaining human certified tester oversight for complex exploit chains.
+                    </p>
+
+                    <div class="space-y-4 text-xs">
+                        <div>
+                            <h4 class="font-bold text-white uppercase font-mono mb-1 text-brand-500">Key Services:</h4>
+                            <ul class="list-disc pl-4 text-gray-300 space-y-1">
+                                <li>Continuous Attack Surface Management (ASM)</li>
+                                <li>Hybrid AI + Human Penetration Testing</li>
+                            </ul>
+                        </div>
+                        <div class="pt-2 text-gray-300">
+                            <strong>Best Suited For:</strong> Mid-market organizations looking for continuous compliance visibility.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. HackerOne -->
+                <article id="company-5" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-brand-border/60 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #5</span>
+                            <h2 class="text-2xl font-black text-white">HackerOne</h2>
+                            <p class="text-xs text-gray-400">Crowdsourced Pentesting & Bug Bounty</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-brand-500">9.2</div>
+                                <div class="text-[10px] text-gray-400 uppercase font-mono">Rating Score</div>
+                            </div>
+                            <a href="https://www.hackerone.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase tracking-wider">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                        HackerOne connects companies with a massive global researcher pool, providing both structured pentest engagements and vulnerability disclosure programs.
+                    </p>
+                </article>
+
+                <!-- 6. NetSPI -->
+                <article id="company-6" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-brand-border/60 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #6</span>
+                            <h2 class="text-2xl font-black text-white">NetSPI</h2>
+                            <p class="text-xs text-gray-400">Enterprise Security & Red Teaming</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-brand-500">9.1</div>
+                                <div class="text-[10px] text-gray-400 uppercase font-mono">Rating Score</div>
+                            </div>
+                            <a href="https://www.netspi.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase tracking-wider">
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 rounded-lg overflow-hidden border border-brand-border relative bg-black/40">
+                        <img src="Screenshot 2026-07-29 at 4.25.49 PM.jpg" alt="NetSPI Services Overview" class="w-full h-auto object-cover max-h-80 opacity-90 hover:opacity-100 transition-opacity" loading="lazy">
+                        <span class="absolute bottom-2 right-2 text-[10px] bg-black/80 px-2 py-1 rounded text-gray-400 font-mono">Platform Interface Preview</span>
+                    </div>
+
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                        NetSPI delivers enterprise penetration testing backed by proprietary execution software, targeting critical financial and healthcare systems.
+                    </p>
+                </article>
+
+                <!-- 7. Coalfire -->
+                <article id="company-7" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #7</span>
+                            <h2 class="text-2xl font-black text-white">Coalfire</h2>
+                            <p class="text-xs text-gray-400">Compliance & FedRAMP Pentesting</p>
+                        </div>
+                        <a href="https://www.coalfire.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase">Visit Website</a>
+                    </div>
+                </article>
+
+                <!-- 8. Mandiant -->
+                <article id="company-8" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #8</span>
+                            <h2 class="text-2xl font-black text-white">Mandiant</h2>
+                            <p class="text-xs text-gray-400">Threat Intelligence & Red Teaming</p>
+                        </div>
+                        <a href="https://www.mandiant.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase">Visit Website</a>
+                    </div>
+                </article>
+
+                <!-- 9. Packetlabs -->
+                <article id="company-9" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #9</span>
+                            <h2 class="text-2xl font-black text-white">Packetlabs</h2>
+                            <p class="text-xs text-gray-400">100% OSCP Certified Manual Pentesting</p>
+                        </div>
+                        <a href="https://www.packetlabs.net/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase">Visit Website</a>
+                    </div>
+                </article>
+
+                <!-- 10. Indusface WAS -->
+                <article id="company-10" class="cyber-card-bg p-6 sm:p-8 rounded-xl border border-brand-border relative transition-all hover:border-brand-500/40">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">Rank #10</span>
+                            <h2 class="text-2xl font-black text-white">Indusface WAS</h2>
+                            <p class="text-xs text-gray-400">Application Security & WAF Scanning</p>
+                        </div>
+                        <a href="https://www.indusface.com/" target="_blank" rel="noopener noreferrer sponsored" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs rounded transition-colors uppercase">Visit Website</a>
+                    </div>
+                </article>
+
+                <!-- Bottom Value Article Stream (Matching Reference Bottom Layout) -->
+                <section class="mt-16 pt-12 border-t border-brand-border">
+                    <h3 class="text-xl font-black text-white mb-6">Continue Reading Security Research</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
+                            <span class="text-[10px] text-brand-500 font-mono">GUIDE</span>
+                            <h4 class="text-sm font-bold text-white mt-1 mb-2">SOC 2 Type II Pentest Requirements</h4>
+                            <p class="text-xs text-gray-400">What compliance auditors look for in penetration testing reports.</p>
+                        </div>
+                        <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
+                            <span class="text-[10px] text-brand-500 font-mono">RESEARCH</span>
+                            <h4 class="text-sm font-bold text-white mt-1 mb-2">Pentesting vs Bug Bounties</h4>
+                            <p class="text-xs text-gray-400">Comparing coverage, cost predictability, and false positive rates.</p>
+                        </div>
+                        <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
+                            <span class="text-[10px] text-brand-500 font-mono">CHECKLIST</span>
+                            <h4 class="text-sm font-bold text-white mt-1 mb-2">2026 Pentest RFP Template</h4>
+                            <p class="text-xs text-gray-400">Essential questions to ask offensive security vendors before scoping.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="pt-8 border-t border-brand-border/40">
+                    <h2 class="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
+                            <h3 class="text-sm font-bold text-white mb-1">What is the average cost of a penetration test in 2026?</h3>
+                            <p class="text-xs text-gray-400">Standard web application or network pentests range from $5,000 to $25,000 depending on scope, target complexity, and manual testing hours.</p>
+                        </div>
+                        <div class="p-4 bg-brand-card rounded-lg border border-brand-border">
+                            <h3 class="text-sm font-bold text-white mb-1">Why is manual testing superior to automated scanners?</h3>
+                            <p class="text-xs text-gray-400">Automated scanners miss complex business logic flaws, authorization bypasses, and multi-step exploit chains that human security engineers identify.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal SPA Container for Content Spokes -->
+    <div id="spoke-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-3xl max-h-[85vh] overflow-y-auto rounded-xl p-6 sm:p-8 relative text-gray-300 border border-brand-border">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
             <div id="modal-content"></div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="border-t border-brand-border mt-20 py-8 text-xs text-gray-500 text-center">
+    <footer class="border-t border-brand-border mt-20 py-8 text-xs text-gray-500 text-center bg-black/40">
         <div class="max-w-7xl mx-auto px-4 space-y-4">
-            <div class="flex flex-wrap justify-center gap-4">
-                <button onclick="openModal('how-to-choose')" class="hover:underline">How to Choose</button>
-                <button onclick="openModal('methodology')" class="hover:underline">Methodology</button>
-                <button onclick="openModal('privacy-policy')" class="hover:underline">Privacy Policy</button>
-                <button onclick="openModal('terms')" class="hover:underline">Terms of Service</button>
+            <div class="flex flex-wrap justify-center gap-6">
+                <button onclick="openModal('how-to-choose')" class="hover:text-brand-500 transition-colors">How to Choose</button>
+                <button onclick="openModal('methodology')" class="hover:text-brand-500 transition-colors">Methodology</button>
+                <button onclick="openModal('privacy-policy')" class="hover:text-brand-500 transition-colors">Privacy Policy</button>
+                <button onclick="openModal('terms')" class="hover:text-brand-500 transition-colors">Terms of Service</button>
             </div>
-            <p>© 2026 top-penetration-testing-companies.com. All rights reserved. Independent Cybersecurity Comparison Portal.</p>
+            <p>© 2026 top-penetration-testing-companies.com — Independent Penetration Testing Directory.</p>
         </div>
     </footer>
 
-    <!-- Client-Side Routing & Dynamic SPA Engine -->
+    <!-- Client-Side Routing JavaScript Engine -->
     <script>
         const spokes = {
             'how-to-choose': `
                 <h2 class="text-2xl font-bold text-white mb-4">How to Choose a Penetration Testing Company</h2>
-                <div class="space-y-4 text-sm leading-relaxed">
-                    <p>Selecting the right penetration testing provider is critical to identifying security blind spots before malicious actors exploit them. Here are key evaluation pillars:</p>
-                    <h3 class="text-lg font-semibold text-brand-500">1. Manual Depth vs. Automated Scans</h3>
-                    <p>Ensure the vendor delivers true manual exploit verification rather than automated vulnerability scanner exports rebranded as pentest reports.</p>
-                    <h3 class="text-lg font-semibold text-brand-500">2. Tester Certifications</h3>
-                    <p>Require team credentials including OSCP, CREST, GPEN, or GXPN to guarantee technical mastery.</p>
-                    <h3 class="text-lg font-semibold text-brand-500">3. Sample Report Rigor</h3>
-                    <p>Ask for a sanitized sample report to evaluate risk scoring (CVSS), proof-of-concept clarity, and practical remediation guidance.</p>
+                <div class="space-y-4 text-xs leading-relaxed">
+                    <p>Selecting the right penetration testing vendor requires evaluating technical depth over marketing claims.</p>
+                    <h3 class="text-sm font-bold text-brand-500">1. Manual Depth vs. Automated Scans</h3>
+                    <p>Ensure the provider guarantees manual exploit verification rather than automated vulnerability scanner reports.</p>
+                    <h3 class="text-sm font-bold text-brand-500">2. Team Certifications</h3>
+                    <p>Look for recognized certifications such as OSCP, CREST CRT/CCT, GXPN, or OSWE.</p>
                 </div>
             `,
             'methodology': `
                 <h2 class="text-2xl font-bold text-white mb-4">Ranking Methodology</h2>
-                <div class="space-y-4 text-sm leading-relaxed">
-                    <p>Our evaluation score (0-10) is computed using a weighted multi-factor matrix:</p>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Technical Capability (35%):</strong> Engineering certifications (OSCP/CREST), manual testing depth, and exploit validation.</li>
-                        <li><strong>Reporting & Retesting (25%):</strong> Actionable remediation steps, clear CVSS scoring, and complimentary retesting availability.</li>
-                        <li><strong>Compliance Alignment (20%):</strong> Support for PCI DSS 4.0, SOC 2 Type II, HIPAA, and ISO 27001 requirements.</li>
-                        <li><strong>Market Reputation & Transparency (20%):</strong> Verified client feedback, pricing transparency, and delivery SLAs.</li>
+                <div class="space-y-4 text-xs leading-relaxed">
+                    <p>Vendors are evaluated across four weighted dimensions:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li><strong>Manual Exploit Rigor (35%):</strong> Depth of human-led testing and zero-false-positive guarantees.</li>
+                        <li><strong>Report Quality & Remediation (25%):</strong> Actionable step-by-step reproduction guidance and retesting policy.</li>
+                        <li><strong>Compliance Alignment (20%):</strong> Readiness for PCI DSS 4.0, SOC 2, ISO 27001, and FedRAMP.</li>
+                        <li><strong>Market Reputation & Pricing (20%):</strong> Verified feedback and transparent scoping models.</li>
                     </ul>
                 </div>
             `,
             'privacy-policy': `
                 <h2 class="text-2xl font-bold text-white mb-4">Privacy Policy</h2>
-                <div class="space-y-4 text-sm leading-relaxed text-gray-400">
-                    <p>Last updated: July 29, 2026.</p>
-                    <p>This Privacy Policy outlines how top-penetration-testing-companies.com collects and protects your information when using our independent directory.</p>
-                    <p><strong>Log Data & Analytics:</strong> We collect non-personally identifiable browser analytics via privacy-friendly server edge logs (e.g., Cloudflare Web Analytics) to improve site performance and security.</p>
-                    <p><strong>Third-Party Outbound Links:</strong> Clicking on external provider links redirects you to third-party domains. We are not responsible for the privacy practices of external websites.</p>
-                </div>
+                <p class="text-xs text-gray-400">Last updated: July 2026. Non-personally identifiable log metrics are processed exclusively for site reliability and security analytics.</p>
             `,
             'terms': `
                 <h2 class="text-2xl font-bold text-white mb-4">Terms of Service</h2>
-                <div class="space-y-4 text-sm leading-relaxed text-gray-400">
-                    <p>Last updated: July 29, 2026.</p>
-                    <p>By accessing top-penetration-testing-companies.com, you agree to these terms. Content provided on this site is for informational and educational comparison purposes only and does not constitute formal legal or cybersecurity advice.</p>
-                </div>
+                <p class="text-xs text-gray-400">Information on this site is provided for educational evaluation and comparative benchmarking purposes only.</p>
             `
         };
 
@@ -486,8 +627,7 @@
             history.pushState({}, '', '/');
         }
 
-        // Handle browser navigation (Back/Forward buttons)
-        window.onpopstate = function(event) {
+        window.onpopstate = function() {
             const path = location.pathname.replace('/', '');
             if (spokes[path]) {
                 document.getElementById('modal-content').innerHTML = spokes[path];
@@ -497,7 +637,6 @@
             }
         };
 
-        // Initialize state on page load based on URL
         window.addEventListener('DOMContentLoaded', () => {
             const initialPath = location.pathname.replace('/', '');
             if (spokes[initialPath]) {
