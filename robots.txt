@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://top-penetration-testing-companies.com/sitemap.xml
