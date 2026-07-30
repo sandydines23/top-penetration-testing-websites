@@ -3,20 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Penetration Testing Comparison Matrix (2026)</title>
-    <link rel="stylesheet" href="index.html"> <!-- Или переиспользовать те же стили -->
+    <title>Enterprise Penetration Testing Comparison Matrix (2026)</title>
     <style>
-        :root { --bg: #0b0f17; --card: #151c28; --border: #232d3f; --accent: #2563eb; --text: #f8fafc; --muted: #94a3b8; --green: #10b981; }
-        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; padding-bottom: 40px; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-        .nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
-        .nav-links { display: flex; gap: 20px; font-size: 14px; font-weight: 600; list-style: none; }
+        :root { --bg: #0b0f17; --card: #151c28; --border: #232d3f; --accent: #2563eb; --text: #f8fafc; --muted: #94a3b8; --green: #10b981; --red: #ef4444; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; padding-bottom: 60px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 40px; flex-wrap: wrap; gap: 15px; }
+        .nav-links { display: flex; gap: 20px; font-size: 14px; font-weight: 600; list-style: none; flex-wrap: wrap; }
         .nav-links a { color: var(--muted); text-decoration: none; }
         .nav-links a.active { color: #fff; }
-        table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); margin-top: 30px; }
-        th, td { padding: 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; color: #fff; }
+        p.subtitle { color: var(--muted); margin-bottom: 30px; }
+        
+        .table-wrapper { overflow-x: auto; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 16px; border-bottom: 1px solid var(--border); font-size: 13px; white-space: nowrap; }
         th { background: #1e293b; color: #fff; font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; }
         tr:last-child td { border-bottom: none; }
+        tr:hover td { background: rgba(255,255,255,0.01); }
+        .badge-yes { color: var(--green); font-weight: 700; }
+        .badge-no { color: var(--red); font-weight: 700; }
+        footer { margin-top: 60px; border-top: 1px solid var(--border); padding-top: 30px; text-align: center; color: var(--muted); font-size: 13px; }
     </style>
 </head>
 <body>
@@ -33,43 +41,98 @@
             </ul>
         </header>
 
-        <h1 style="font-size: 2rem; margin-bottom: 10px;">Vendor Feature Comparison Matrix</h1>
-        <p style="color: var(--muted); margin-bottom: 20px;">Side-by-side technical specification breakdown of top-tier penetration testing platforms.</p>
+        <h1>Comprehensive Vendor Comparison Matrix</h1>
+        <p class="subtitle">Side-by-side technical specification breakdown of top-tier penetration testing platforms and services.</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Vendor</th>
-                    <th>Manual %</th>
-                    <th>PTaaS Support</th>
-                    <th>Re-testing Included</th>
-                    <th>Starting Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Paranoid Security</strong></td>
-                    <td>100%</td>
-                    <td>Custom</td>
-                    <td>Yes (45 days)</td>
-                    <td>Custom / Enterprise</td>
-                </tr>
-                <tr>
-                    <td><strong>DeteAct</strong></td>
-                    <td>85%</td>
-                    <td>Yes</td>
-                    <td>Included in SLA</td>
-                    <td>$6,000+</td>
-                </tr>
-                <tr>
-                    <td><strong>BI.ZONE</strong></td>
-                    <td>90%</td>
-                    <td>Enterprise</td>
-                    <td>By Request</td>
-                    <td>$15,000+</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vendor</th>
+                        <th>Global Rank</th>
+                        <th>Rating</th>
+                        <th>Manual Effort</th>
+                        <th>PTaaS Support</th>
+                        <th>Re-Testing Included</th>
+                        <th>Starting Price</th>
+                        <th>Primary Advantage</th>
+                        <th>Key Limitation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DeteAct</strong></td>
+                        <td>#1</td>
+                        <td style="color:var(--green); font-weight:700;">9.4</td>
+                        <td>85%</td>
+                        <td class="badge-yes">Yes (Full)</td>
+                        <td>Included in SLA</td>
+                        <td>$6,000+</td>
+                        <td>CI/CD Integration & SaaS Agility</td>
+                        <td>Less rigid compliance mapping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BI.ZONE</strong></td>
+                        <td>#2</td>
+                        <td style="color:var(--green); font-weight:700;">9.1</td>
+                        <td>90%</td>
+                        <td>Enterprise</td>
+                        <td class="badge-no">By Request</td>
+                        <td>$15,000+</td>
+                        <td>APT Simulation & Banking Focus</td>
+                        <td>Premium enterprise pricing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paranoid Security</strong></td>
+                        <td>#3</td>
+                        <td style="color:var(--green); font-weight:700;">9.8</td>
+                        <td>100%</td>
+                        <td>Custom</td>
+                        <td class="badge-yes">Yes (45 Days)</td>
+                        <td>$12,000+</td>
+                        <td>Zero False Positives / Logic Depth</td>
+                        <td>Strict scheduling queue</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Positive Technologies</strong></td>
+                        <td>#4</td>
+                        <td style="color:var(--green); font-weight:700;">8.8</td>
+                        <td>60%</td>
+                        <td class="badge-no">No (Scanner-led)</td>
+                        <td class="badge-no">No</td>
+                        <td>$10,000+</td>
+                        <td>Automated Asset Discovery</td>
+                        <td>High noise / false positives</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Secarma</strong></td>
+                        <td>#5</td>
+                        <td style="color:var(--green); font-weight:700;">8.5</td>
+                        <td>90%</td>
+                        <td class="badge-no">No</td>
+                        <td class="badge-yes">Yes (30 Days)</td>
+                        <td>$8,000+</td>
+                        <td>Cloud Config & Social Engineering</td>
+                        <td>Limited regional hours</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CrowdStrike Services</strong></td>
+                        <td>#6</td>
+                        <td style="color:var(--green); font-weight:700;">8.3</td>
+                        <td>80%</td>
+                        <td>Enterprise</td>
+                        <td class="badge-no">No</td>
+                        <td>$20,000+</td>
+                        <td>Endpoint Telemetry / IR Playbooks</td>
+                        <td>Very high cost tier</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>© 2026 top-penetration-testing-websites.com. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
