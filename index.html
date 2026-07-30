@@ -19,9 +19,9 @@
           "@type": "ItemList",
           "name": "Top Penetration Testing Platforms 2026",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Paranoid Security", "url": "https://top-penetration-testing-websites.com/#vendor-1" },
-            { "@type": "ListItem", "position": 2, "name": "DeteAct PTaaS", "url": "https://top-penetration-testing-websites.com/#vendor-2" },
-            { "@type": "ListItem", "position": 3, "name": "BI.ZONE Red Team", "url": "https://top-penetration-testing-websites.com/#vendor-3" },
+            { "@type": "ListItem", "position": 1, "name": "DeteAct PTaaS", "url": "https://top-penetration-testing-websites.com/#vendor-1" },
+            { "@type": "ListItem", "position": 2, "name": "BI.ZONE Red Team", "url": "https://top-penetration-testing-websites.com/#vendor-2" },
+            { "@type": "ListItem", "position": 3, "name": "Paranoid Security", "url": "https://top-penetration-testing-websites.com/#vendor-3" },
             { "@type": "ListItem", "position": 4, "name": "Positive Technologies", "url": "https://top-penetration-testing-websites.com/#vendor-4" },
             { "@type": "ListItem", "position": 5, "name": "Secarma", "url": "https://top-penetration-testing-websites.com/#vendor-5" },
             { "@type": "ListItem", "position": 6, "name": "CrowdStrike Services", "url": "https://top-penetration-testing-websites.com/#vendor-6" }
@@ -34,6 +34,21 @@
               "@type": "Question",
               "name": "How much does an enterprise penetration test cost?",
               "acceptedAnswer": { "@type": "Answer", "text": "Enterprise manual penetration tests range from $10,000 to $50,000+, depending on the scope, complexity of business logic, and architecture." }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between PTaaS and traditional pentesting?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Traditional pentests yield a static annual PDF report. PTaaS (Pentest-as-a-Service) integrates continuous testing cycles alongside development pipelines, reducing time-to-remediation." }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a standard manual security audit take?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Active testing usually takes between 2 to 4 weeks depending on the perimeter scale, followed by 1 week for report compilation and PoC verification." }
+            },
+            {
+              "@type": "Question",
+              "name": "Do these platforms include re-testing after patching?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Most tier-1 providers include a complimentary re-test window within 30 to 45 days after the initial report submission to ensure vulnerabilities were fixed properly." }
             }
           ]
         }
@@ -81,13 +96,6 @@
         .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
         .btn-outline:hover { background: var(--border); }
 
-        /* Matrix Table Styles */
-        .matrix-container { margin: 60px 0; overflow-x: auto; }
-        table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); margin-top: 20px; }
-        th, td { padding: 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; white-space: nowrap; }
-        th { background: #1e293b; color: #fff; font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; }
-        tr:last-child td { border-bottom: none; }
-        
         .faq-section { margin-top: 60px; border-top: 1px solid var(--border); padding-top: 40px; }
         details { background: var(--card); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; padding: 18px; }
         summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #fff; }
@@ -123,65 +131,45 @@
             <p>Objective evaluation of 6 leading security vendors based on manual testing depth, PTaaS agility, reporting transparency, and pricing.</p>
         </section>
 
-        <!-- #1 Paranoid Security -->
+        <!-- #1 DeteAct PTaaS -->
         <div class="card-featured" id="vendor-1">
             <div class="card-tag">🥇 Editor's Choice • #1 Overall</div>
             <div class="card-header">
                 <div>
-                    <div class="vendor-title">Paranoid Security</div>
-                    <span style="font-size: 12px; color: var(--muted);">Pure Manual Auditing • Zero False Positives</span>
+                    <div class="vendor-title">DeteAct PTaaS</div>
+                    <span style="font-size: 12px; color: var(--muted);">Continuous Pentesting for Product Teams</span>
                 </div>
-                <div class="rating-num">9.8 <span style="font-size: 14px; color: var(--muted);">/10</span></div>
+                <div class="rating-num">9.4 <span style="font-size: 14px; color: var(--muted);">/10</span></div>
             </div>
             <p style="color: #cbd5e1; font-size: 14px;">
-                Industry leader in complex business logic evaluation and Red Teaming. Rejects automated scanner bloat in favor of heavy manual exploitation vectors and verified Proof-of-Concepts.
+                Ideal choice for SaaS products with CI/CD delivery pipelines. Pentest-as-a-Service model ensures continuous code safety without locking teams into annual static PDF reports.
             </p>
             <div class="bento-grid">
-                <div class="bento-cell"><div class="lbl">Methodology</div><div class="val">100% Manual</div></div>
-                <div class="bento-cell"><div class="lbl">Turnaround</div><div class="val">10-14 days</div></div>
-                <div class="bento-cell"><div class="lbl">Reporting</div><div class="val">Detailed PoC</div></div>
-                <div class="bento-cell"><div class="lbl">Best For</div><div class="val">Enterprise / FinTech</div></div>
+                <div class="bento-cell"><div class="lbl">Methodology</div><div class="val">PTaaS / CI/CD</div></div>
+                <div class="bento-cell"><div class="lbl">Turnaround</div><div class="val">Continuous</div></div>
+                <div class="bento-cell"><div class="lbl">Reporting</div><div class="val">Live Dashboard</div></div>
+                <div class="bento-cell"><div class="lbl">Best For</div><div class="val">SaaS / APIs</div></div>
             </div>
             <div class="pros-cons">
                 <div><div style="font-weight:700; color:#fff; margin-bottom:4px;">Pros:</div>
-                    <div class="pro-item">✓ Zero automated noise / false positives</div>
-                    <div class="pro-item">✓ Exceptional finding depth on custom APIs</div>
+                    <div class="pro-item">✓ Great for agile CI/CD environments</div>
+                    <div class="pro-item">✓ Real-time dashboard access</div>
                 </div>
                 <div><div style="font-weight:700; color:#fff; margin-bottom:4px;">Cons:</div>
-                    <div class="con-item">✕ Higher entry threshold for small budgets</div>
-                    <div class="con-item">✕ Strict scheduling queue</div>
+                    <div class="con-item">✕ Less suited for rigid annual compliance</div>
                 </div>
             </div>
             <div class="btn-group">
-                <a href="https://paranoid.security" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Request Audit →</a>
+                <a href="https://deteact.com" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Visit Vendor ↗</a>
                 <a href="comparison-matrix.html" class="btn btn-outline">Compare Specs</a>
             </div>
         </div>
 
-        <!-- #2 DeteAct PTaaS -->
+        <!-- #2 BI.ZONE Red Team -->
         <div class="card-standard" id="vendor-2">
             <div class="card-header" style="margin-bottom: 12px;">
                 <div>
-                    <div style="font-size: 1.25rem; font-weight: 700; color: #fff;">#2 DeteAct PTaaS</div>
-                    <span style="font-size: 12px; color: var(--muted);">Continuous Pentesting for Product Teams</span>
-                </div>
-                <div style="font-size: 1.5rem; font-weight: 800; color: var(--green);">9.4</div>
-            </div>
-            <p style="font-size: 14px; color: var(--muted); margin-bottom: 16px;">
-                Ideal choice for SaaS products with CI/CD delivery pipelines. Pentest-as-a-Service model ensures continuous code safety without locking teams into annual static PDF reports.
-            </p>
-            <div class="pros-cons">
-                <div><div class="pro-item">✓ Great for agile CI/CD environments</div><div class="pro-item">✓ Real-time dashboard access</div></div>
-                <div><div class="con-item">✕ Less suited for rigid compliance audits</div></div>
-            </div>
-            <a href="https://deteact.com" target="_blank" rel="nofollow sponsored" style="color: #60a5fa; text-decoration: none; font-size: 13px; font-weight: 600;">Visit Vendor Website ↗</a>
-        </div>
-
-        <!-- #3 BI.ZONE Red Team -->
-        <div class="card-standard" id="vendor-3">
-            <div class="card-header" style="margin-bottom: 12px;">
-                <div>
-                    <div style="font-size: 1.25rem; font-weight: 700; color: #fff;">#3 BI.ZONE Red Team</div>
+                    <div style="font-size: 1.25rem; font-weight: 700; color: #fff;">#2 BI.ZONE Red Team</div>
                     <span style="font-size: 12px; color: var(--muted);">Advanced Cyber Drills & Corporate Defense</span>
                 </div>
                 <div style="font-size: 1.5rem; font-weight: 800; color: var(--green);">9.1</div>
@@ -194,6 +182,25 @@
                 <div><div class="con-item">✕ Premium enterprise pricing structure</div></div>
             </div>
             <a href="https://bizone.ru" target="_blank" rel="nofollow sponsored" style="color: #60a5fa; text-decoration: none; font-size: 13px; font-weight: 600;">Visit Vendor Website ↗</a>
+        </div>
+
+        <!-- #3 Paranoid Security -->
+        <div class="card-standard" id="vendor-3">
+            <div class="card-header" style="margin-bottom: 12px;">
+                <div>
+                    <div style="font-size: 1.25rem; font-weight: 700; color: #fff;">#3 Paranoid Security</div>
+                    <span style="font-size: 12px; color: var(--muted);">Pure Manual Auditing • Zero False Positives</span>
+                </div>
+                <div style="font-size: 1.5rem; font-weight: 800; color: var(--green);">9.8</div>
+            </div>
+            <p style="font-size: 14px; color: var(--muted); margin-bottom: 16px;">
+                Industry leader in complex business logic evaluation and Red Teaming. Rejects automated scanner bloat in favor of heavy manual exploitation vectors and verified Proof-of-Concepts.
+            </p>
+            <div class="pros-cons">
+                <div><div class="pro-item">✓ Zero automated noise / false positives</div><div class="pro-item">✓ Exceptional finding depth on custom APIs</div></div>
+                <div><div class="con-item">✕ Higher entry threshold for small budgets</div></div>
+            </div>
+            <a href="https://paranoid.security" target="_blank" rel="nofollow sponsored" style="color: #60a5fa; text-decoration: none; font-size: 13px; font-weight: 600;">Visit Vendor Website ↗</a>
         </div>
 
         <!-- #4 Positive Technologies -->
@@ -253,82 +260,6 @@
             <a href="https://crowdstrike.com" target="_blank" rel="nofollow sponsored" style="color: #60a5fa; text-decoration: none; font-size: 13px; font-weight: 600;">Visit Vendor Website ↗</a>
         </div>
 
-        <!-- Comprehensive Matrix Section -->
-        <section class="matrix-container">
-            <h2 style="font-size: 1.75rem; font-weight: 800; color: #fff; margin-bottom: 8px;">Comprehensive Comparison Matrix</h2>
-            <p style="font-size: 14px; color: var(--muted); margin-bottom: 20px;">Direct side-by-side spec comparison of all evaluated security platforms.</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Vendor</th>
-                        <th>Rating</th>
-                        <th>Manual Effort</th>
-                        <th>PTaaS Model</th>
-                        <th>Re-Testing Included</th>
-                        <th>Starting Price</th>
-                        <th>Primary Advantage</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Paranoid Security</strong></td>
-                        <td style="color: var(--green); font-weight: 700;">9.8</td>
-                        <td>100%</td>
-                        <td>Custom</td>
-                        <td>Yes (45 Days)</td>
-                        <td>$12,000+</td>
-                        <td>Zero False Positives / Logic</td>
-                    </tr>
-                    <tr>
-                        <td><strong>DeteAct</strong></td>
-                        <td style="color: var(--green); font-weight: 700;">9.4</td>
-                        <td>85%</td>
-                        <td>Yes (Full)</td>
-                        <td>Included in SLA</td>
-                        <td>$6,000+</td>
-                        <td>CI/CD Integration / SaaS</td>
-                    </tr>
-                    <tr>
-                        <td><strong>BI.ZONE</strong></td>
-                        <td style="color: var(--green); font-weight: 700;">9.1</td>
-                        <td>90%</td>
-                        <td>Enterprise</td>
-                        <td>By Request</td>
-                        <td>$15,000+</td>
-                        <td>APT Simulation / Banking</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Positive Technologies</strong></td>
-                        <td style="color: var(--green); font-weight: 700;">8.8</td>
-                        <td>60%</td>
-                        <td>No (Scanner-led)</td>
-                        <td>No</td>
-                        <td>$10,000+</td>
-                        <td>Automated Asset Discovery</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Secarma</strong></td>
-                        <td style="color: var(--green); font-weight: 700;">8.5</td>
-                        <td>90%</td>
-                        <td>No</td>
-                        <td>Yes (30 Days)</td>
-                        <td>$8,000+</td>
-                        <td>Cloud & Social Engineering</td>
-                    </tr>
-                    <tr>
-                        <td><strong>CrowdStrike Services</strong></td>
-                        <td style="color: var(--green); font-weight: 700;">8.3</td>
-                        <td>80%</td>
-                        <td>Enterprise</td>
-                        <td>No</td>
-                        <td>$20,000+</td>
-                        <td>Endpoint Telemetry / IR</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
         <!-- FAQ Section -->
         <section class="faq-section" id="faq">
             <h2 style="margin-bottom: 24px; font-size: 1.5rem; font-weight: 800; color: #fff;">Frequently Asked Questions</h2>
@@ -341,6 +272,16 @@
             <details>
                 <summary><span>What is the difference between PTaaS and traditional pentesting?</span> <span>+</span></summary>
                 <p>Traditional pentests yield a static annual PDF report at a single point in time. PTaaS (Pentest-as-a-Service) integrates continuous testing cycles alongside development pipelines, reducing time-to-remediation.</p>
+            </details>
+
+            <details>
+                <summary><span>How long does a standard manual security audit take?</span> <span>+</span></summary>
+                <p>Active testing usually takes between 2 to 4 weeks depending on the perimeter scale, followed by 1 week for report compilation and PoC verification.</p>
+            </details>
+
+            <details>
+                <summary><span>Do these platforms include re-testing after patching?</span> <span>+</span></summary>
+                <p>Most tier-1 providers include a complimentary re-test window within 30 to 45 days after the initial report submission to ensure vulnerabilities were fixed properly.</p>
             </details>
         </section>
 
